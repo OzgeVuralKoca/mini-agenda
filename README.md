@@ -4,4 +4,4 @@ I created a mini agenda application with HTML, CSS, and JavaScript.While I was m
 -save with local storage...
 You can access the code through the link below.
 
-![image](https://user-images.githubusercontent.com/122672119/217570067-f9aa343c-b942-4421-bd31-369bc8c897e6.png)
+![miniagenda](https://user-images.githubusercontent.com/122672119/217570183-531dac26-094c-4040-804d-393763033064.png)
