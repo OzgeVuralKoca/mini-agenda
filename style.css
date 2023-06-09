@@ -4,15 +4,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
 }
 
-body {
+.main {
     font-family: 'Quicksand', sans-serif;
     height: 100vh;
     padding: 50px;
     background: linear-gradient(150deg,
-            #dda15e,
-            #fefae0);
+            #e4e4e4,
+            #c4b9b9);
 }
 
 .row {
@@ -43,19 +44,19 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.06);
     box-shadow: 0 25px 30px rgba(0, 0, 0, 0.15);
     backdrop-filter: blur(5px);
-    border-top: 5px solid #bc6c25;
-    border-bottom: 5px solid #bc6c25;
+    border-top: 5px solid #dd6e0d;
+    border-bottom: 5px solid #dd6e0d;
 }
 
 #day {
     font-size: 150%;
-    color: #ffffffd0;
+    color: #161616;
     text-align: center;
 }
 
 #time {
     font-size: 200%;
-    color: #42631e;
+    color: #172e0c;
     text-align: center;
 }
 
@@ -71,14 +72,14 @@ body {
     backdrop-filter: blur(5px);
     padding: 30px;
     margin-top: 30px;
-    color: #606c38;
+    color: #172e0c;
 }
 
 .header h1,
 .todo {
     font-weight: 500;
     font-size: 1.5em;
-    background-color: #bc6b2571;
+    background-color: #a05006b2;
     padding: 3px;
     width: 100%;
     color: #fefae0;
@@ -92,7 +93,7 @@ body {
     border: 0;
     outline: 0;
     padding: 5px 0;
-    border-bottom: 2px solid #bc6c25;
+    border-bottom: 2px solid #dd6e0d;
     text-align: center;
     font-size: 1.3em;
     color: #fefae0
@@ -106,7 +107,7 @@ body {
 .temp {
     font-size: 4em;
     font-weight: 500;
-    color: #fefae0;
+    color: #141414;
 }
 
 .desc {
@@ -132,7 +133,7 @@ body {
 
 #new-task input {
     position: flex;
-    width: 80%;
+    width: 70%;
     height: 35px;
     font-size: 1em;
     font-weight: 500;
@@ -141,7 +142,7 @@ body {
     padding: 10px;
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
-    color: #606c38;
+    color: #172e0c;
 }
 
 #new-task input:focus {
@@ -153,11 +154,11 @@ body {
     position: relative;
     float: right;
     height: 35px;
-    width: 20%;
+    width: 30%;
     font-size: 90%;
     font-weight: 500;
     border: none;
-    background-color: #606c38;
+    background-color: #172e0c;
     padding: 8px;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
@@ -168,8 +169,8 @@ body {
 .todolisttext {
     margin-top: 30px;
     font-weight: 500;
-    font-size: 1.3em;
-    background-color: #bc6b2571;
+    font-size: 1em;
+    background-color: #a05006b2;
     padding: 3px;
     width: 100%;
     color: #fefae0;
@@ -184,7 +185,7 @@ body {
     box-shadow: 0 25px 30px rgba(0, 0, 0, 0.15);
     backdrop-filter: blur(5px);
     width: 100%;
-    color: #606c38;
+    color: #172e0c;
     min-height: 270px;
 }
 
@@ -199,7 +200,7 @@ body {
     cursor: pointer;
     font-size: 1.2em;
     font-weight: 500;
-    color: #606c38;
+    color: #172e0c;
 }
 
 .task span {
@@ -232,14 +233,14 @@ body {
 
     .row .col-3 {
         flex: 100%;
-        display: flex;
         padding: 0 12%;
         align-items: center;
+        display: flex;
     }
 
     .clockbox,
     .app {
-        flex: 50%;
+        width: 50%;
         padding: 5px;
     }
 
@@ -253,7 +254,7 @@ body {
     }
 
     .app .temp {
-        border: #bc6c25;
+        border: #dd6e0d;
         border-width: 0 2px 0 2px;
         padding: 0 10px;
         border-style: dashed;
@@ -266,4 +267,20 @@ body {
         font-size: 1em;
         color: #42631e
     }
+}
+
+@media only screen and (max-width:699px) {
+    .row .col-3 {
+        flex-wrap: wrap;
+        padding: 0 12%;
+        align-items: center;
+        justify-content: center;
+    }
+
+   .clockbox,
+    .app {
+        width: 100%;
+        margin-top: 20px;
+        padding: 5px;
+    } 
 }
